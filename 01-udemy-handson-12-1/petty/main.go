@@ -30,26 +30,11 @@ type carModelSales struct {
 
 var allCars []carModelSales
 
-func petty() {
-	var carModel, fullName, carSalesOut string
-	var modelYear string //I might change this to int in the future
+func outputSales(carModel, modelYear string) {
+	var fullName, carSalesOut string
 
 	//populateDb function is called to take the slice of bytes and place it into an array of struct
 	populateDb()
-
-	//The user inputs one of three car model types, Camaro, Firebird, Mustang
-	fmt.Print("Enter Car Model Name (Camaro | Firebird | Mustang): ")
-	_, err := fmt.Scan(&carModel)
-	if err != nil {
-		panic(err)
-	}
-
-	//The user inputs either 1996 or 1997, as the year of model sales
-	fmt.Print("Enter a specific Model Year between 1996-1997: ")
-	_, err = fmt.Scan(&modelYear)
-	if err != nil {
-		panic(err)
-	}
 
 	//Print out what the user input was
 	switch carModel {
