@@ -30,7 +30,10 @@ type carModelSales struct {
 
 var allCars []carModelSales
 
-func outputSales(carModel, modelYear string) {
+//OutputSales takes a Car Model (carModel) and Model Year (modelYear) as input,
+//populates the vehicle sales database variable, finds the desired Car Model and Model Year,
+// and then prints out the full name of the vehicle and the sales for the desired Model Year.
+func OutputSales(carModel, modelYear string) {
 	var fullName, carSalesOut string
 
 	//populateDb function is called to take the slice of bytes and place it into an array of struct

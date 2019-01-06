@@ -31,6 +31,6 @@ func main() {
 
 	//Now that you have the desired car model and model year, call the petty function to print out
 	//the desired statistics
-	petty.outputSales(carModel, modelYear)
+	petty.OutputSales(carModel, modelYear)
 
 }
