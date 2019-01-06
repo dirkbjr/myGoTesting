@@ -7,6 +7,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/myGoTesting/01-udemy-handson-12-1/petty"
 )
 
 func main() {
